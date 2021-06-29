@@ -7,23 +7,7 @@ function Join() {
   return (
     <div className="joinOuterContainer">
       <div className="joinInnerContainer">
-        <h1 className="heading">
-          <div>
-            <input
-              placeholder=""
-              className="joinInput"
-              type="text"
-              onChange={(e) => setName(e.target.value)}
-            />
-          </div>
-          <div>
-            <input
-              placeholder=""
-              className="joinInput mt-20"
-              type="text"
-              onChange={(e) => setRoom(e.target.value)}
-            />
-          </div>
+    //Removed Unimportant code
           <Link
             onClick={(e) => (!name || !room ? e.preventDefault() : null)}
             to={`/chat?name=${name}&room=${room}`}
@@ -32,7 +16,6 @@ function Join() {
               Sign In
             </button>
           </Link>
-        </h1>
       </div>
     </div>
   );
